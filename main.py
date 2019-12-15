@@ -25,7 +25,7 @@ def train_C3D(args):
 
     print("Device being used:", device)
 
-    save_dir_root = "/hdd/local/sda/mishal/CrashCatcher"
+    save_dir_root = "/home/mishal/PycharmProjects/Inter-video-frame-forgery-detection"
     if args.resume_epoch != 0:
         runs = sorted(glob.glob(os.path.join(save_dir_root, 'run', 'run_*')))
         run_id = int(runs[-1].split('_')[-1]) if runs else 0
